@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+         <!-- Font Awesome -->
+ <link
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+ rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+ href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+ rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+ rel="stylesheet"
+/>
+
+
+<style>
+.busiSection{
+    width: 38%;
+    text-align: center;
+    margin-top: 40px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.busiSection3{
+    width: 38%;
+    text-align: center;
+    margin-top: 40px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.busiSection2{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+.busiH1{
+    font-size: 28px;
+    color: #111111;
+}.busiH4{
+    font-size: 16px;
+    color: #5f5f5f;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol",Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック",Arial,sans-serif;
+    text-align: center;
+}
+.busiContainer{
+  width: 90%;
+  margin: auto;
+}
+
+.busiSection2{
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 14px 0px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+
+}
+.busP1{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+    color: #111111;
+
+}
+.busiP2{
+    text-align: left;
+    font-weight: 400;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+    font-size: 16px;
+    color: #5f5f5f;
+    letter-spacing: 0px;
+    line-height: 1.2;
+
+}
+.busiA{
+    color: #111111;
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+.busiCol{
+    text-align: left;
+}
+.fa-check{
+    color: #0074e8;
+    font-weight: 800;
+    font-size: 20px;
+    padding-top: 30px;
+}
+.busiBtn1{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    min-width: 60px;
+    background-color: #efefef;
+    cursor: pointer;
+    border-radius: 24px;
+    font-size: 16px;
+    text-transform: none;
+    color: #111111;
+    margin-right: 15px;
+}
+.busiBtn2:hover{
+  background-color: #a3081a ;
+  color: #efefef;
+}
+.busiBtn1:hover{
+  background-color: #dadada ;
+}
+.busiBtn2{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    min-width: 60px;
+    background-color: #e60023;
+    cursor: pointer;
+    border-radius: 24px;
+    font-size: 16px;
+    text-transform: none;
+    color: #efefef;
+
+}
+.busiFootP{
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.busiBtn3{
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    cursor: pointer;
+    color: #111111;
+    font-size: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 14px 0px;
+    position: absolute;
+    right: 18px;
+    top: -15px;
+    
+}
+.busiFooter{
+    position: relative;
+}
+
+</style>
+
+</head>
+
+
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+
+
+
+<body>
+    {% load static %}
+    {% include 'includes/_inNavbar.html' %}
+
+
+    <div class="busNavbar mt-4">
+
+    </div>
+<div class="busiContainer">
+    <div class="busiSection">
+        <h1 class="busiH1">Ücretsiz işletme hesabına yükseltin</h1>
+        <h4 class="busiH4">Reklamlar ve analizler gibi araçlarla işinizi veya markanızı büyütün. İçeriğiniz, profiliniz ve takipçileriniz aynı kalacak. Ayarlar bölümünden bu değişikliği eski haline getirebilirsiniz.<i class="fa-solid fa-circle-exclamation fa-xs" style="color: #111111;"></i> </h4>
+    </div>
+<div class="busiSection2">
+    <div class="container">
+        <div class="row">
+            <div class="col-6"></div>
+            <div class="col-3 ">
+                <p class="busP1">Kişisel</p>
+            </div>
+            <div class="col-3 ">
+                <p class="busP1">İş Dünyası</p>
+            </div>
+<hr>
+        </div>
+        <div class="row">
+            <div class="col-4 busiCol">
+                    
+                    <a class="busiA" href="#"><i class="fa-solid fa-pen"></i> Yayın araçları</a>
+                <p class="busiP2">
+                    Görüntü veya video kullanarak fikirlerinizi paylaşın</p>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-3 ">
+                <p><i class="fa-solid fa-check"></i></p>
+            </div>
+            <div class="col-3 ">
+                <p><i class="fa-solid fa-check"></i></p>
+            </div>
+<hr>
+        </div>
+        <div class="row">
+            <div class="col-4 busiCol">
+                    
+                    <a class="busiA" href="#"><i class="fa-solid fa-circle-exclamation"></i> Reklam yöneticisi</a>
+                <p class="busiP2">
+                    Kampanyaları yönetin ve izleyin</p>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-3 ">
+            </div>
+            <div class="col-3 ">
+                <p><i class="fa-solid fa-check"></i></p>
+            </div>
+<hr>
+        </div>
+        <div class="row">
+            <div class="col-4 busiCol">
+                    
+                    <a class="busiA" href="#"><i class="fa-solid fa-chart-line"></i>İstatistikler ve Analizler</a>
+                <p class="busiP2">
+                    En iyi performanslı Pinleri ve reklamları keşfedin</p>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-3 ">
+            </div>
+            <div class="col-3 ">
+                <p><i class="fa-solid fa-check"></i></p>
+            </div>
+<hr>
+        </div>
+        <div class="row">
+            <div class="col-4 busiCol">
+                    
+                    <a class="busiA" href="#"><i class="fa-solid fa-star fa-xs"></i>Krediler ve kampanyalar</a>
+                <p class="busiP2">
+                    Promosyonlar, reklam kredileri ve daha fazlası için hak kazanın</p>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-3 ">
+            </div>
+            <div class="col-3 ">
+                <p><i class="fa-solid fa-check"></i></p>
+            </div>
+<hr>
+        </div>
+        
+
+    </div>
+</div>
+
+<div class="busiSection3 mt-4">
+<button class="btn busiBtn1">İptal</button>
+<button class="btn busiBtn2">Yükselt</button>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="busiFooter text-center mt-5 d-flex justify-content-center">
+    <p class="busiFootP">Dönüştürerek şunları kabul etmiş olursunuz: Pinterest İşletme Hizmet Şartları Gizlilik Politikası </p>
+       <button class="btn busiBtn3">?</button> 
+    
+</div>
+<script>
+
+
+</script>
+
+</body>
+</html>

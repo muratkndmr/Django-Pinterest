@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Font Awesome -->
+ <link
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+   rel="stylesheet"
+ />
+ <!-- Google Fonts -->
+ <link
+   href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+   rel="stylesheet"
+ />
+ <!-- MDB -->
+ <link
+   href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+   rel="stylesheet"
+ />
+
+{% block style %}
+<title>Document</title>
+{% load static %}
+{% endblock style %}
+
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+<style>
+  .warning{
+         min-width: 200px;
+         height: 60px;
+         box-shadow: 2px 2px 4px #00000030;
+         border: 1px solid #00000030;
+         border-radius: 10px;
+         position: relative;
+         z-index: 2500;
+         background: #fff;
+         overflow: hidden;
+         animation: warning 5s linear both;
+         margin-bottom: 5px;
+      }
+      .warn{
+         padding: 10px;
+      }
+      .warn-time{
+         width: 100%;
+         height: 8px;
+         background: brown;
+         position: absolute;
+         bottom: 0;
+         animation: warntime 5s linear;
+      }
+      @keyframes warning {
+         80%{
+            opacity: 1;
+            z-index: 2500;
+         }
+         100%{
+            opacity: 0;
+            z-index: -100;
+         }
+      }
+      @keyframes warntime {
+         
+         100%{
+            width: 0px;
+         }
+      }
+</style>
+</head>
+
+ <!-- MDB -->
+
+
+
+ <script
+   type="text/javascript"
+   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+ ></script>
+
+
+ <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+ <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<body>
+    {% include 'includes/_navbar.html' %}
+    {% include 'includes/_header.html' %}
+    {% include 'includes/_register.html' %}
+    {% include 'includes/_login.html' %}
+
+   <div style="position: absolute; top: 100px; right: 70px;">
+      
+      {% if messages %}
+      {% for i in messages %}
+      <div class="warning">
+         <div class="warn">{{ i }}</div>
+         <div class="warn-time" {% if i.tags == "success" %} style="background: green;" {% endif %}></div>
+      </div>
+      {% endfor %}
+      {% endif %}               
+   </div>
+   <i class=""></i>
+
+    {% block main %}        
+   {% endblock main %}
+   {% include 'includes/_section.html' %}
+   {% include 'includes/_footer.html' %}
+
+    <!-- {% include 'includes/_footer.html' %} -->
+
+<script>
+
+
+var elem = document.querySelector('.grid');
+var msnry = new Masonry( elem, {
+  // options
+  itemSelector: '.grid-item',
+  gutter:10 
+});
+
+
+var elem = document.querySelector('.grid2');
+var msnry = new Masonry( elem, {
+  // options
+  itemSelector: '.grid-item2',
+  gutter:10 
+});
+
+
+var elem = document.querySelector('.grid3');
+var msnry = new Masonry( elem, {
+  // options
+  itemSelector: '.grid-item3',
+  gutter:10 
+});
+
+var elem = document.querySelector('.grid4');
+var msnry = new Masonry( elem, {
+  // options
+  itemSelector: '.grid-item4',
+  gutter:10 
+});
+
+// anasayfa acilirken block olmasi icin
+const headerout = document.querySelectorAll('.headerCon2, .headerCon3, .headerCon4');
+
+headerout.forEach(container => {
+  container.style.display = 'none';
+});
+
+setTimeout(() => {
+  headerout.forEach(container => {
+    container.style.display = 'block';
+  });
+}, 4000); // 2 saniye sonra elementleri görünür hale getir
+
+
+// headerConlarin gecis hizini ayarlamak icin
+const headerContainers = document.querySelectorAll('.headerCon, .headerCon2, .headerCon3, .headerCon4');
+const animationDuration = 4000; // 2 saniye
+
+function animateHeaderContainers() {
+  let currentIndex = 1;
+
+  setInterval(() => {
+    headerContainers.forEach((container, index) => {
+      if (index === currentIndex) {
+        container.style.display = 'block';
+      } else {
+        container.style.display = 'none';
+      }
+    });
+
+    currentIndex = (currentIndex + 1) % headerContainers.length;
+  }, animationDuration);
+}
+animateHeaderContainers();
+
+
+
+const gridImages = document.querySelectorAll('.grid1R'); // Tüm grid1R resimlerini seçer
+
+function animateImage(image) {
+  image.classList.remove('hidden'); // Eğer resim gizliyse görünür hale getir
+  setTimeout(() => {
+    image.classList.add('hidden'); // Belirli bir süre sonra resmi gizle
+    setTimeout(() => {
+      animateImage(image); // 10 saniye sonra bir sonraki animasyonu başlat
+    }, 2000); // 10 saniye sonra bir sonraki animasyonu başlat
+  }, 2050); // 2 saniye sonra resmi gizle
+}
+
+gridImages.forEach(image => {
+  animateImage(image); // Her bir resim için animasyonu başlat
+});
+
+
+
+
+const gridImages2 = document.querySelectorAll('.grid2R'); // Tüm grid1R resimlerini seçer
+
+function animateImage2(image) {
+  image.classList.remove('hidden'); // Eğer resim gizliyse görünür hale getir
+  setTimeout(() => {
+    image.classList.add('hidden'); // Belirli bir süre sonra resmi gizle
+    setTimeout(() => {
+      animateImage2(image); // 10 saniye sonra bir sonraki animasyonu başlat
+    }, 2000); // 10 saniye sonra bir sonraki animasyonu başlat
+  }, 2070); // 2 saniye sonra resmi gizle
+}
+
+gridImages2.forEach(image => {
+  animateImage2(image); // Her bir resim için animasyonu başlat
+});
+
+
+
+
+const gridImages3 = document.querySelectorAll('.grid3R'); // Tüm grid1R resimlerini seçer
+
+function animateImage3(image) {
+  image.classList.remove('hidden'); // Eğer resim gizliyse görünür hale getir
+  setTimeout(() => {
+    image.classList.add('hidden'); // Belirli bir süre sonra resmi gizle
+    setTimeout(() => {
+      animateImage3(image); // 10 saniye sonra bir sonraki animasyonu başlat
+    }, 2000); // 10 saniye sonra bir sonraki animasyonu başlat
+  }, 2090); // 2 saniye sonra resmi gizle
+}
+
+gridImages3.forEach(image => {
+  animateImage3(image); // Her bir resim için animasyonu başlat
+});
+
+
+
+const gridImages4 = document.querySelectorAll('.grid4R'); // Tüm grid1R resimlerini seçer
+
+function animateImage4(image) {
+  image.classList.remove('hidden'); // Eğer resim gizliyse görünür hale getir
+  setTimeout(() => {
+    image.classList.add('hidden'); // Belirli bir süre sonra resmi gizle
+    setTimeout(() => {
+      animateImage4(image); // 10 saniye sonra bir sonraki animasyonu başlat
+    }, 2000); // 10 saniye sonra bir sonraki animasyonu başlat
+  }, 2110); // 2 saniye sonra resmi gizle
+}
+
+gridImages4.forEach(image => {
+  animateImage4(image); // Her bir resim için animasyonu başlat
+});
+
+
+
+const gridImages5 = document.querySelectorAll('.grid5R'); // Tüm grid1R resimlerini seçer
+
+function animateImage5(image) {
+  image.classList.remove('hidden'); // Eğer resim gizliyse görünür hale getir
+  setTimeout(() => {
+    image.classList.add('hidden'); // Belirli bir süre sonra resmi gizle
+    setTimeout(() => {
+      animateImage5(image); // 10 saniye sonra bir sonraki animasyonu başlat
+    }, 2000); // 10 saniye sonra bir sonraki animasyonu başlat
+  }, 2130); // 2 saniye sonra resmi gizle
+}
+
+gridImages5.forEach(image => {
+  animateImage5(image); // Her bir resim için animasyonu başlat
+});
+
+
+
+const gridImages6 = document.querySelectorAll('.grid6R'); // Tüm grid1R resimlerini seçer
+
+function animateImage6(image) {
+  image.classList.remove('hidden'); // Eğer resim gizliyse görünür hale getir
+  setTimeout(() => {
+    image.classList.add('hidden'); // Belirli bir süre sonra resmi gizle
+    setTimeout(() => {
+      animateImage6(image); // 10 saniye sonra bir sonraki animasyonu başlat
+    }, 2000); // 10 saniye sonra bir sonraki animasyonu başlat
+  }, 2150); // 2 saniye sonra resmi gizle
+}
+
+gridImages6.forEach(image => {
+  animateImage6(image); // Her bir resim için animasyonu başlat
+});
+
+
+
+const gridImages7 = document.querySelectorAll('.grid7R'); // Tüm grid1R resimlerini seçer
+
+function animateImage7(image) {
+  image.classList.remove('hidden'); // Eğer resim gizliyse görünür hale getir
+  setTimeout(() => {
+    image.classList.add('hidden'); // Belirli bir süre sonra resmi gizle
+    setTimeout(() => {
+      animateImage7(image); // 10 saniye sonra bir sonraki animasyonu başlat
+    }, 2000); // 10 saniye sonra bir sonraki animasyonu başlat
+  }, 2170); // 2 saniye sonra resmi gizle
+}
+
+gridImages7.forEach(image => {
+  animateImage7(image); // Her bir resim için animasyonu başlat
+});
+
+
+</script>
+    
+<script src="{% static 'app.js' %}"></script>
+
+</body>
+</html>

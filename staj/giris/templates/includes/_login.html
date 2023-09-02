@@ -1,0 +1,30 @@
+{% load static %}
+<div class="login" id="loginAna">
+    <div class="loginImg">
+        <img src="{% static 'img/indir.png' %}" width="60px" alt="">
+    </div>
+        <span class="closes">&times;</span>
+            <!-- Giriş formu burada yer alacak -->
+
+    <h2 class="loginH2">Pinterest'e Hoş Geldiniz</h2>
+   
+    <div class="login2">
+        <form method="POST" name="login1">
+            {% csrf_token %}   
+        <h6 class="loginEh6">Kullanıcı Adınız</h6>
+        <input class="loginIe" name="username"  type="username" placeholder="Kullanıcı Adınız">
+     <h6 class="loginEh66">Parola</h6>
+     <input type="password"  name="password" class="loginIe" placeholder="Parola">
+     <h6 class="loginEh66"><a href="" class="text-black">Parolanizi mi unuttunuz ? </a> </h6>
+     <button type="submit"   class="loginBd" name="login1">Oturum Aç</button>
+    </form>
+
+     <h5 class="loginH5">VEYA</h5>
+     <button class="loginBf"><img src="{% static 'img/facebook.jpg' %}" width="37px" alt=""> Facebook ile Devam Et</button>
+     <button class="loginBg"> <img src="{% static 'img/google.jpg' %}" alt="">Google ile devam edin</button>
+     <p class="login1p">Devam ederek Pinterest'in <a href="" class="text-black loginpA1">Hizmet Şartları</a>  koşullarını kabul etmiş ve <a href="" class="text-black loginpA1">Gizlilik Politakası</a>  metnini okuduğunuzu onaylamış olursunuz.  <a href="" class="text-black loginpA1">Veri toplama bildirimi.</a> </p>
+     <p class="login1p">Hala pinterest'te değil misiniz?<a href="" class="text-black loginpA1">Kaydolun</a></p>
+     <p class="login1p pb-3">İşletme misiniz? <a href="" class="text-black loginpA1">Buradan Başlayın!</a></p>
+    </div>
+   
+</div>

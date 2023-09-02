@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+         <!-- Font Awesome -->
+ <link
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+ rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+ href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+ rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+ rel="stylesheet"
+/>
+
+<style>
+   .profilNav{
+        height: 10vh;
+    }
+    .settıngH1{
+        font-weight: 600;
+        font-size: 28px;
+        color: #111111;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+    }
+    .settingP1{
+        font-weight: 400;
+        font-size: 16px;
+        color: #111111;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif; 
+        width: 40%;
+    }.settingP2{
+        font-weight: 400;
+        font-size: 12px;
+        color: #111111;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif; 
+        margin-bottom: 0px !important;
+    }
+    .settigImg1{
+        border-radius: 50%;
+        width: 75px;
+    }
+    .settingBtn1{
+            font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+            text-align: center;
+            font-size: 16px;
+            color: #111111;
+            cursor: pointer;
+            padding: 8px 10px 8px 10px;
+            border-radius: 26px;
+            background-color: #efefef;
+            text-transform: none;
+            margin-left: 1rem;
+            margin-bottom: 0.7rem;
+        }
+        .settingBtn1:hover{
+            background-color: #ede9e9;
+        }
+        .settingAd{
+        font-weight: 400;
+        font-size: 12px;
+        color: #111111;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif; 
+        margin-bottom: 0px !important;
+        margin-right: 2rem;
+        }
+        .settingSo{
+        font-weight: 400;
+        font-size: 12px;
+        color: #111111;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif; 
+        margin-bottom: 0px !important;
+        }
+        .settinFle1{
+            width: 20%;
+            justify-content: space-between;
+        }
+        .settingInp1{
+            padding: 8px 16px;
+            border: 2px solid #cdcdcd;
+            border-radius: 16px;
+            width: 233px;
+        }
+        .settingInp2{
+            padding: 8px 16px;
+            border: 2px solid #cdcdcd;
+            border-radius: 16px;
+            width: 476px;
+            height: 10vh;
+        }
+        .settingInp3{
+            padding: 8px 16px;
+            border: 2px solid #cdcdcd;
+            border-radius: 16px;
+            width: 476px;
+        }
+    
+
+        .settingFootr{
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            height: 26.8vh;
+ 
+        }
+        .settingFooJ{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 14px 0px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top:2rem ;
+            padding-bottom:1rem ;
+
+        }
+        .busiBtn3{
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    cursor: pointer;
+    color: #111111;
+    font-size: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 14px 0px;
+    position: absolute;
+    right: 30px;
+    top: 870px;
+    
+}
+.profiP4{
+        font-size: 60px;
+        border-radius: 50%;
+        background-color: #78909c;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #efefef;
+
+    }
+</style>
+
+</head>
+
+
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+
+
+
+<body>
+    {% load static %}
+
+
+    {% include 'includes/_inNavbar.html' %}
+
+
+    <div class="container-fluid  mt-4">
+        <div class="row">
+            <div class="col-2">
+    {% include 'includes/_option.html' %}
+
+            </div>
+            <div class="col-1">
+
+
+            </div>
+            <div class="col-9">
+             <h1 class="settıngH1">Profili düzenle</h1>
+             <p class="settingP1">Kişisel bilgilerinizi gizli tutun. Buraya eklediğiniz bilgiler, profilinizi görüntüleyebilen herkes tarafından görülebilir.</p>
+             <p class="settingP2">Fotoğraf</p>
+             <div>
+                <span class="profiP4">{{ user.get_username|first }}</span>
+                <button class="btn settingBtn1">Degistir</button>
+             </div>
+             <div class="d-flex settinFle1 mt-3">
+                <p class="settingAd">Ad</p>
+                <p class="settingSo">Soyadı</p>
+
+             </div>
+             <div class="d-flex">
+                <input class="settingInp1 me-2"  type="text">
+                <input class="settingInp1"  type="text">
+             </div>
+             <div class="mt-3">
+                <p class="settingAd" >Hakkında</p>
+                <input type="text" class="settingInp2" placeholder="Hikayenizi anlatın">
+             </div>
+          
+             <p class="settingAd mt-3 " >Web sitesi</p>
+             <input type="text" class="settingInp3"  placeholder="Sitenize trafik çekmek için bir bağlantı ekleyin">
+             <p class="settingAd mt-3" >Kullanıcı adı</p>
+             <input class="settingInp3 " value="{{ user.get_username  }}" type="text">
+             <p class="settingAd mt-2" >www.pinterest.com/kandemir98murat</p>
+            </div>
+        </div>
+        
+ 
+    </div>
+    <div class="settingFootr">
+        <div class="settingFooJ">
+            <button class="btn settingBtn1 ">Yenile</button>
+            <button class="btn settingBtn1">Kaydet</button>
+
+        </div>
+    </div>
+
+    <button class="btn busiBtn3">?</button> 
+
+
+
+
+
+
+
+
+<script></script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+         <!-- Font Awesome -->
+ <link
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+ rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+ href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+ rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+ rel="stylesheet"
+/>
+
+<style>
+     .profilNav{
+        height: 10vh;
+    }
+     .settingFootr{
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            margin-top: 1rem; 
+            height: 32.2vh;
+            
+
+        }
+        .settingFooJ{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 14px 0px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top:2rem ;
+            padding-bottom:1rem ;
+
+        }
+        .settingBtn1{
+            font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+            text-align: center;
+            font-size: 16px;
+            color: #111111;
+            cursor: pointer;
+            padding: 8px 10px 8px 10px;
+            border-radius: 26px;
+            background-color: #efefef;
+            text-transform: none;
+            margin-left: 1rem;
+            margin-bottom: 0.7rem;
+        }
+        .settingBtn1:hover{
+            background-color: #ede9e9;
+        }
+    .busiBtn3{
+        border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    cursor: pointer;
+    color: #111111;
+    font-size: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 14px 0px;
+    position: fixed;
+    right: 30px;
+    top: 870px;
+    
+}
+.settıngH1{
+        font-weight: 600;
+        font-size: 28px;
+        color: #111111;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+    }
+    .settingP1{
+        font-weight: 400;
+        font-size: 16px;
+        color: #111111;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif; 
+        width: 35%;
+        }
+        .permisP1{
+        font-weight: 400;
+        font-size: 16px;
+        color: #111111;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif; 
+        width: 30%;
+        margin-right: 3rem;
+        }
+        .settingP4{
+        font-weight: 400;
+        font-size: 16px;
+        color: #111111;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif; 
+        width: 80%;
+        margin-bottom: 0px !important;
+        }
+        .accoP1{
+        font-weight: 600;
+        font-size: 20px;
+        color: #111111;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+    }
+    .settingAd{
+        font-weight: 400;
+        font-size: 12px;
+        color: #111111;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif; 
+        margin-bottom: 0px !important;
+        margin-right: 2rem;
+        }
+        .settingInp3{
+            padding: 8px 16px;
+            border: 2px solid #cdcdcd;
+            border-radius: 16px;
+            width: 476px;
+        }
+        .accoP2{
+        font-weight: 600;
+        font-size: 16px;
+        color: #111111;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+        margin-top: 1rem;
+        }
+        .accorFl{
+            width: 35%;
+        }
+        .accorBtn{
+            font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+            text-align: center;
+            font-size: 16px;
+            color: #111111;
+            cursor: pointer;
+            border-radius: 26px;
+            background-color: #efefef;
+            text-transform: none;
+            width: 138px;
+            margin-top: 3rem;            
+        }
+        .accorBtn:hover{
+            background-color: #ede9e9;
+        }
+        .accorBtn2{
+            font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+            text-align: center;
+            font-size: 16px;
+            color: #111111;
+            cursor: pointer;
+            border-radius: 26px;
+            background-color: #efefef;
+            text-transform: none;
+            width: 220px;
+            margin-top: 2rem;            
+        }
+        .accorBtn2:hover{
+            background-color: #ede9e9;
+        }
+        .accorBtn3{
+            font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+            text-align: center;
+            font-size: 16px;
+            color: #111111;
+            cursor: pointer;
+            border-radius: 26px;
+            background-color: #efefef;
+            text-transform: none;
+            width: 150px;
+            margin-top: 3rem;     
+        }
+        .accorBtn3:hover{
+            background-color: #ede9e9;
+        }
+        .accountSel{
+            padding: 8px 16px;
+            border: 2px solid #cdcdcd;
+            border-radius: 16px;
+            width: 476px;
+            margin-top: 0.3rem;
+        }
+        .permiLab{
+            font-size: 16px;
+            font-weight: 400;
+            font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+            color: #111111;
+            padding-left: 0.6rem;
+            margin-bottom: 0.7rem;
+        }
+        .permisIn{
+            width: 24px;
+            height: 24px;
+            border: 1px solid #111111;
+        }
+        .permiP1{
+         margin-left: 38px;
+        }
+        .permisC1{
+            width: 80%;
+
+        }
+        .permisC2{
+            width: 20%;
+            
+        }
+        .visiChe{
+            height: 30px;
+            width: 30px;
+
+        }
+        .notiP{
+            font-weight: 600;
+            font-size: 12px;
+            color: #111111;
+            font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+        }
+
+    
+</style>
+
+</head>
+
+
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+
+
+
+<body>
+    {% load static %}
+
+
+    {% include 'includes/_inNavbar.html' %}
+
+    <div class="container-fluid  mt-4">
+        <div class="row">
+            <div class="col-2">
+    {% include 'includes/_option.html' %}
+
+            </div>
+            <div class="col-1">
+
+
+            </div>
+          <div class="col-9">
+           <h1 class="settıngH1">Bildirimler</h1>
+             <p class="settingP1">Sizi önemli değişikliklerden mutlaka haberdar edeceğiz; ancak siz yine de başka neleri duymak istediğinizi belirtin. Daha fazla bilgi alın</p>
+
+
+ 
+         
+
+            <div class="d-flex accorFl">
+                <div class="permisC1" >
+                    <h1 class="accoP2">Pinterest'te</h1>
+                    <p class="settingP4">Uygulamada veya sitedeyken göreceğiniz bildirimleri seçin.</p>
+                    <p class="notiP">Daha fazla bilgi edinin</p>
+                </div>
+                <div  class="permisC2">
+                    <button class="btn accorBtn3">Düzenle</button>
+                </div>
+
+             </div>
+
+
+             <div class="d-flex accorFl">
+                <div class="permisC1" >
+                    <h1 class="accoP2">E-postayla</h1>
+                    <p class="settingP4">E-posta ile hangi bildirimleri alacağınızı seçin</p>
+                    <p class="notiP">Daha fazla bilgi edinin</p>
+                </div>
+                <div  class="permisC2">
+                    <button class="btn accorBtn3">Düzenle</button>
+                </div>
+
+             </div>
+
+             <div class="d-flex accorFl">
+                <div class="permisC1" >
+                    <h1 class="accoP2">Anlık bildirimlerle</h1>
+                    <p class="settingP4">Telefonunuza veya bilgisayarınıza gelecek bildirimleri seçin.</p>
+                    <p class="notiP">Daha fazla bilgi edinin</p>
+                </div>
+                <div  class="permisC2">
+                    <button class="btn accorBtn3">Düzenle</button>
+                </div>
+
+             </div>
+
+
+
+
+
+
+
+    
+
+
+</div>
+<div>
+
+</div>
+       
+
+
+
+   
+
+             </div>
+          </div>
+        </div>
+        
+ 
+    </div>
+    <div class="settingFootr">
+        <div class="settingFooJ">
+            <button class="btn settingBtn1 ">Yenile</button>
+            <button class="btn settingBtn1">Kaydet</button>
+            <button class="btn busiBtn3">?</button> 
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+</script>
+</body>
+</html>

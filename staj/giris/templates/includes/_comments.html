@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+         <!-- Font Awesome -->
+ <link
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+ rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+ href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+ rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+ rel="stylesheet"
+/>
+
+<style>
+     .profilNav{
+        height: 10vh;
+    }
+    .busiBtn3{
+        border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    cursor: pointer;
+    color: #111111;
+    font-size: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 14px 0px;
+    position: fixed;
+    right: 30px;
+    top: 870px;
+    
+}
+
+.accountH1{
+    font-weight: 600;
+    font-size: 36px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+    color: #111111;
+}
+.accountH2{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+    color: #111111;
+}
+.accountP{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+    color: #111111;
+    width: 31%;
+    text-align: center;
+}
+.accountCardC{
+    width: 60%;
+}
+.accountJ1{
+    width: 30%;
+}
+.accountJ3{
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 14px 0px;
+    border-radius: 24px;
+     padding: 10px;
+    
+
+}
+.accountjh4{
+    font-weight: 600;
+    font-size: 20px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+    color: #111111;
+    text-align: center;
+    padding-top: 1rem;
+}
+.accountjp{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+    color: #111111;
+    text-align: center;
+}
+.accountjp2{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+    color: #111111;
+    text-align: center;
+    margin-bottom: 4px !important;
+    width: 98%;
+    
+}
+.accountjbt{
+    font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+            text-align: center;
+            font-size: 16px;
+            color: #111111;
+            cursor: pointer;
+            border-radius: 26px;
+            background-color: #efefef;
+            text-transform: none;
+            margin-left: 2.3rem;
+}
+.accountjbt2{
+    font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+            text-align: center;
+            font-size: 16px;
+            color: #111111;
+            cursor: pointer;
+            border-radius: 26px;
+            background-color: #efefef;
+            text-transform: none;
+            margin-left: 4.4rem;
+}
+.accountjbt3{
+    font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+            text-align: center;
+            font-size: 16px;
+            color: #efefef;
+            cursor: pointer;
+            border-radius: 26px;
+            background-color: red;
+            text-transform: none;
+            margin-left: 3.8rem;
+}
+.commentContC{
+    width: 53%;
+    height: 90vh;
+    border: 1px solid floralwhites;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 14px 0px;
+
+
+}
+.commenJ2{
+    width: 50%;
+    padding: 20px;
+}
+.commeImg{
+    width: 480px;
+    height: 85vh;
+    border-radius: 16px;
+}
+.commenJ1{
+    padding: 15px;
+}
+.btnComm{
+    font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+            text-align: center;
+            font-size: 16px;
+            color: #efefef;
+            cursor: pointer;
+            border-radius: 26px;
+            background-color: red;
+            text-transform: none;
+            margin-left: 9rem;
+}
+
+.btnComm2{
+    font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+            text-align: center;
+            font-size: 16px;
+            color: #111111;
+            cursor: pointer;
+            border-radius: 26px;
+            background-color: #efefef;
+            text-transform: none;
+            margin-left: 9rem;
+}
+.commP1{
+    font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+            font-size: 36px;
+            color: #111111;
+            font-weight: 600;
+            
+}
+.commImgj{
+    width: 50px;
+    margin-top: 1.4rem;
+
+}
+.commPj1{
+    font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+            font-size: 12px;
+            color: #111111;
+            font-weight: 600;
+            margin-bottom: 0px !important;
+}
+.commY{
+    font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+            font-size: 20px;
+            color: #111111;
+            font-weight: 600;
+            margin-bottom: 0px !important;
+            margin-top: 1.5rem;
+            margin-left: 0.8rem;
+}
+.commeYa{
+      position: absolute;
+      top: 490px;
+      right: 520px;
+      width: 20%;
+       
+ 
+
+    }
+    .profip2{
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: #78909c; 
+    color: #fff;
+    padding: 9px;
+    }
+    .commeSp{
+        font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+        color: #111111;
+        font-weight: 600;
+    }
+    .yorum{
+        margin-top: 19rem;
+        border-radius: 16px;
+
+        padding-top: 12px;
+        padding-bottom: 15px;
+    }
+    .inNavbarSea1{
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,"ＭＳ Ｐゴシック",Arial,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+
+}
+.inNavbarSea1::placeholder{
+    padding-top: 10px;
+    padding-left: 14px;
+    font-size: 18px;
+}
+.comment3{
+    border-radius: 24px;
+    background-color: #e9e9e9;
+    width: 420px;
+    height: 5vh;
+    margin-top: 25px;
+}
+.fa-arrow-left{
+    cursor: pointer;
+
+}
+
+
+</style>
+</head>
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+<body>
+    {% load static %}
+    {% include 'includes/_inNavbar.html' %}
+
+
+<a href="./anasayfa" class="text-dark"> <i class="fa-solid fa-arrow-left fa-xl ms-5 mt-3"></i></a>
+   
+
+<div class="commentCont d-flex justify-content-center">
+
+    <div class="commentContC d-flex">
+     <div class="commenJ2">
+        <img class="commeImg" src="{% static 'img/resim6.jpg' %}" alt="">
+     </div>
+     <div class="commenJ1">
+      <div class="commnBtn d-flex justify-content-evenly mt-4 ms-4">
+        <div  >
+            <i class="fa-solid fa-ellipsis fa-xl me-4"></i>
+            <i class="fa-solid fa-share-from-square me-4"></i>
+            <i class="fa-solid fa-link me-4"></i>
+        </div>
+
+        <div class="ms-5">
+            <button class="btn btnComm ">Kaydet</button>
+
+        </div>
+      </div>
+      <p class="commP1 mt-3">Telefonunuzu Canlandıracak Yeni Duvar Kağıdı</p>
+    <div class="d-flex imgBtn">
+        <div class="d-flex">
+            <div>
+                <img class="commImgj" src="{% static 'img/hizli.png' %}" alt="">
+
+            </div>
+            <div class="mt-4 ms-2">
+                <p class="commPj1">cediart.org Phone Wallpapers</p>
+                <p class="commPj1">11,6 bin takipçi</p>
+            </div>
+        </div>
+        <div class="mt-4">
+            <button class="btn btnComm2 ">Kaydet</button>
+        </div>
+
+    </div>
+    <p class="commY">Yorumlar</p>
+    <div>
+    
+        <div class="mt-4 me-2 d-flex">
+            <span class="profip2">{{ user.get_username|first }}</span>
+        </div>
+<div class="d-flex commeYa">
+    <p>   <span class="text-dark commeSp">{{ user.get_username }}</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, eius tenetur provident earum magni ad harum blanditiis quibusdam, adipisci dolorum error cum illum, quod sequi eligendi pariatur molestiae dignissimos fuga!</p>
+</div>
+
+      
+
+        <div>
+       
+    
+    </div>
+     </div>
+
+     <div class="yorum d-flex">
+        <div class="mt-4 me-2 d-flex">
+            <span class="profip2">{{ user.get_username|first }}</span>
+        </div>
+        <div class="comment3">
+            <input type="text" class="inNavbarSea1 mt-1" placeholder="Yorum Ekle">
+        </div>
+     </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <button class="btn busiBtn3">?</button> 
+
+  
+
+
+
+
+
+
+
+
+<script>
+// İkinci sayfada, localStorage'dan tıklanan resmin src bilgisini alın
+const clickedImageSrc = localStorage.getItem('clickedImageSrc');
+
+// İkinci sayfada, öğeyi seçin ve src özelliğini değiştirin
+const imageElement = document.querySelector('.commeImg');
+if (imageElement) {
+    imageElement.setAttribute('src', clickedImageSrc);
+}
+
+
+</script>
+</body>
+</html>

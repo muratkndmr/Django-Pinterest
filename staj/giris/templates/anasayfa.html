@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+         <!-- Font Awesome -->
+ <link
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+ rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+ href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+ rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+ href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+ rel="stylesheet"
+/>
+
+
+<style>
+.grid-item{
+    width: 230px;
+}
+.grid-item > img{
+    width: 100%;
+    border-radius: 15px;
+}
+.anaCont{
+    width: 90%;
+    margin: auto;
+    z-index: 1;
+}
+.grid-item:hover{
+    cursor: pointer;
+    filter: brightness(50%); /* Hover durumunda resmin parlaklığını düşürür (karanlık yapar) */
+    position: relative;
+
+
+}
+
+.accountjbt3{
+    font-family: apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3,ãƒ¡ã‚¤ãƒªã‚ª,Meiryo,ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯,Arial,sans-serif;
+            text-align: center;
+            font-size: 16px;
+            color: #efefef;
+            cursor: pointer;
+            border-radius: 26px;
+            background-color: red;
+            text-transform: none;
+            margin-left: 3.8rem;
+            position: absolute;
+            top:10px;
+            right: 10px;
+            padding: 5px !important;
+            opacity: 0;
+}
+.grid-item:hover .accountjbt3{
+    opacity: 1;
+}
+
+
+</style>
+
+
+</head>
+
+
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+
+
+
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<body>
+    {% load static %}
+
+
+    {% include 'includes/_inNavbar.html' %}
+
+<div class="anaCont">
+    
+        <div class="grid">
+            <div class="grid-item mb-2">
+                <img src="{% static 'img/anasayfalmg/resimAna1.jpg' %}" alt="" class="grid-image"> 
+                <button class="btn  accountjbt3">Yorum Yap  </button>
+            </div>
+            <div class="grid-item mb-2">
+                <img src="{% static 'img/anasayfalmg/resimAna2.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button>
+            </div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/resimAna3.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/resimAna4.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/resimAna5.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/resimAna6.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div> 
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/resimAna7.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/resimAna8.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/resimAna9.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/resimAna10.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/resimAna11.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/resimAna12.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/resimAna13.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/resimAna14.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/resimAna15.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/resimAna16.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY1.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY2.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY3.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY4.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY5.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY6.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY7.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY8.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY9.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY10.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY11.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY12.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY13.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY14.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY15.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY16.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY17.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY18.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY19.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY22.jpg' %}" alt="" class="grid-image">
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+            <div class="grid-item mb-2"><img src="{% static 'img/anasayfalmg/rsmY21.jpg' %}" alt="" class="grid-image"  >
+                <button class="btn  accountjbt3">Yorum Yap  </button></div>
+
+
+
+
+
+
+
+            
+          </div>
+        
+    </div>
+
+
+<script>
+var elem = document.querySelector('.grid');
+var msnry = new Masonry(elem, {
+    itemSelector: '.grid-item',
+    gutter: 10, // Yatay ve dikey boşluk
+});
+
+
+// Tıklanan resmin src bilgisini localStorage'a kaydedin
+document.querySelectorAll('.grid-item .grid-image').forEach(function(imageElement) {
+    imageElement.addEventListener('click', function() {
+        const src = this.getAttribute('src');
+        localStorage.setItem('clickedImageSrc', src);
+
+        // Diğer sayfaya yönlendirin
+        window.location.href = './comments';
+    });
+});
+
+
+
+</script>
+
+</body>
+</html>
